@@ -39,7 +39,7 @@ console.log (numeroGenerado);
 console.log (listaNumerosSorteados);
 // Si ya sorteaste todos los numeros 
 if(listaNumerosSorteados.length == numeroMaximo){
-asignarTextoElemento ('p', 'Ya se sortearon todos los numeros posibles');
+asignarTextoElemento ('p', 'All possible numbers have been drawn.');
 }else {
 // Si el Numero Generado esta en la lista 
 if (listaNumerosSorteados.includes(numeroGenerado)){
@@ -54,7 +54,7 @@ return generaNumeroSecreto();
 
 function condicionesIniciales(){
 asignarTextoElemento ('h1','The Secret Number Game!');
-asignarTextoElemento ("p",`Please Enter a number between 1 y ${numeroMaximo}`);
+asignarTextoElemento ("p",`Please Enter a number between 1 and ${numeroMaximo}`);
 numeroSecreto= generaNumeroSecreto ();
 intentos = 1;
 }
